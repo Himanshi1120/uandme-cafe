@@ -1,0 +1,206 @@
+:root {
+    --primaryColor: #e88bb0;
+    --backgroundSoft: #fff7fb;
+    --borderSoft: #f3b6d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--backgroundSoft);
+    color: #333;
+}
+
+.themePanel {
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: translateY(-50%);
+}
+
+.themeButton {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.pink { background: #e88bb0; }
+.darkPink { background: #c44575; }
+.brown { background: #8b5e3c; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 26px;
+    font-family: 'Playfair Display', serif;
+}
+
+.heart {
+    color: red;
+}
+
+nav a {
+    margin-left: 22px;
+    text-decoration: none;
+    color: #555;
+}
+
+nav a:hover {
+    color: var(--primaryColor);
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(var(--backgroundSoft), white);
+}
+
+.welcomeText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 48px;
+}
+
+.sideHeart {
+    color: red;
+    font-size: 28px;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 12px 32px;
+    border: none;
+    background: var(--primaryColor);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.menuTabs {
+    margin-bottom: 40px;
+}
+
+.menuTabs button {
+    padding: 10px 20px;
+    margin: 0 8px;
+    border: none;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid var(--borderSoft);
+}
+
+.menuTabs .activeTab {
+    background: var(--primaryColor);
+    color: white;
+}
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+.menuCard {
+    background: white;
+    border: 2px solid var(--borderSoft);
+    border-radius: 18px;
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+.menuCard:hover {
+    transform: translateY(-10px);
+}
+
+.menuCard span {
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.about {
+    padding: 80px 15%;
+    background: var(--backgroundSoft);
+    text-align: center;
+}
+
+.reviews {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.reviewGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.reviewCard {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid var(--borderSoft);
+}
+
+.reviewCard h4 {
+    margin-top: 15px;
+    color: var(--primaryColor);
+}
+
+.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 450px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 12px 30px;
+    border: none;
+    background: var(--primaryColor);
+    color: white;
+    border-radius: 25px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
